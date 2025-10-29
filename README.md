@@ -1,4 +1,4 @@
-# 🇮🇳 Latin to Devanagari Transliteration using Seq2Seq
+# Latin to Devanagari Transliteration using Seq2Seq
 
 This project tackles the problem of converting **romanized Hindi text** (like how we type on WhatsApp) back into **proper Devanagari script**.  
 For example:  
@@ -16,9 +16,9 @@ The model is trained using the **Aksharantar dataset** released by **AI4Bharat**
 
 ---
 
-## ⚙️ The Challenge I Faced
+##  The Challenge I Faced
 
-🚫 **GPU Limitation:**  
+ **GPU Limitation:**  
 My laptop uses an NVIDIA MX250 (2 GB VRAM), so training large models would crash.
 
 To handle this:
@@ -31,7 +31,7 @@ Despite this, the code and design remain scalable for larger GPUs.
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 The model uses an **Encoder–Decoder (Seq2Seq)** architecture:
 
@@ -98,7 +98,7 @@ Variable Lengths
 Uses pack_padded_sequence to handle words of different lengths efficiently
 
  ## Code Structure
-
+```
 project/
 ├── transliteration_model.py   # Main model classes
 ├── data_utils.py              # Dataset and vocab handling
@@ -107,7 +107,8 @@ project/
 ├── config.py                  # All hyperparameters
 ├── requirements.txt           # Dependencies
 └── results/                   # Training plots & outputs
-🚀 How to Run
+```
+ How to Run
 Setup
 
 git clone https://github.com/navyasgr/Sequence2Sequence-Aksharantar-IITM-navya.git
